@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:id="@+id/Contxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="34dp"
+    android:text="Currency Converter"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/To"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="32dp"
+    android:text="To:"
+    android:textSize="25sp" />
+
+<TextView
+    android:id="@+id/From"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="19dp"
+    android:text="From:"
+    android:textSize="25sp" />
+
+<TextView
+    android:id="@+id/txtResult"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btnConvert"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:id="@+id/btnConvert"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/From"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="64dp"
+    android:text="Convert" />
+
+<Spinner
+    android:id="@+id/spinnerFrom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/To"
+    android:layout_marginTop="16dp"
+    android:layout_toLeftOf="@+id/btnConvert"
+    android:entries= "@array/spinnerFrom"
+    />
+
+<Spinner
+    android:id="@+id/spinnerTo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/spinnerFrom"
+    android:layout_toRightOf="@+id/btnConvert"
+    android:entries="@array/spinnerTo"
+    />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Numtxt"
+        android:layout_below="@+id/Contxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:hint="Enter the Amount" />
+
+</RelativeLayout>

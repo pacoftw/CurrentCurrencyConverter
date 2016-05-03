@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Current Currency Converter</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="spinnerFrom">
+        <item >USD</item>
+        <item >GBP</item>
+        <item >JPY</item>
+        <item >EUR</item>
+        <item >KRW</item>
+    </string-array>
+    <string-array name="spinnerTo">
+        <item >USD</item>
+        <item >GBP</item>
+        <item >JPY</item>
+        <item >EUR</item>
+        <item >KRW</item>
+    </string-array>
+</resources>
